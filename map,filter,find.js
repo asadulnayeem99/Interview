@@ -3,7 +3,7 @@ const sqr = [];
 for (let i = 0; i < numbers.length; i++) {
   const element = numbers[i];
   const result = element * element;
-//   console.log(result);
+  //   console.log(result);
   sqr.push(result);
 }
 console.log(sqr);
@@ -15,5 +15,13 @@ const result = numbers.map(function (element) {
 console.log(result);
 
 //es6
-const res = numbers.map(x=>x*x);
+const res = numbers.map((x) => x * x);
 console.log(res);
+
+//filter
+const bigger = numbers.filter((x) => x > 10);
+console.log(bigger);
+
+//find
+const find = numbers.find(x=>x>10);
+console.log(find);
